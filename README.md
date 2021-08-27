@@ -1,1 +1,2 @@
 # bridgebuilderscharlotte.github.io
+Bridge Builders Charlotte is a network of campus-community partnerships bridging religious difference to build a stronger Charlotte. Our first round of projects, funded by The Gambrell Foundation, promoted interfaith engagement while meeting pandemic-related needs from food insecurity to learning loss.
