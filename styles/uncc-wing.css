@@ -131,6 +131,7 @@ header {
 .about {
     text-align: center;
     padding: 50px;
+    line-height: 40px;
 }
 
     .about img {
