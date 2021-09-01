@@ -1,23 +1,9 @@
-﻿html, body {
+html, body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
-}
-
-
-.hero img {
-    width: 100%;
-    height: fit-content;
-    filter: brightness(.6);
-}
-
-.heroaddon {
-    position: relative;
-    top: -100%;
-    text-align: center;
-    height: fit-content;
 }
 
 header {
@@ -29,31 +15,32 @@ header {
     z-index: 1000;
 }
 
-.container-nav {
+.container {
     width: 100%;
     max-width: 120rem;
     margin: 0 auto;
-    padding: 0 1.5rem;
 }
 
 .nav {
     width: 100%;
-    height: 10rem;
+    height: 6.6rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     transition: height .5s ease;
+    background-color: white;
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
 }
 
     .nav a {
         text-decoration: none;
-        color: #fff;
+        color: black;
         font-size: 1.3rem;
     }
 
-    .nav .logo {
-        opacity: 0;
-    }
+.logo {
+    margin-left: 2rem;
+}
 
 .nav-list {
     list-style: none;
@@ -71,7 +58,7 @@ header {
         content: '';
         width: 100%;
         height: 2px;
-        background-color: #fff;
+        background-color: black;
         position: absolute;
         left: 0;
         bottom: -3px;
@@ -96,34 +83,6 @@ header {
     #nav-cta:hover {
         background-color: #d3d3d3;
     }
-
-
-/*Apply styles after scroll*/
-.scrolling-active {
-    background-color: #fff;
-    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
-}
-
-    .scrolling-active .nav {
-        height: 6.6rem;
-    }
-
-        .scrolling-active .nav .logo {
-            opacity: 1;
-        }
-
-        .scrolling-active .nav a {
-            color: #313131;
-        }
-
-    .scrolling-active .nav-link::after {
-        background-color: #313131;
-    }
-
-.scrolling-active-footer {
-    display: none;
-    transition: all ease-in-out .5s;
-}
 
 .sidenav-bridge {
     position: absolute;
@@ -169,99 +128,62 @@ header {
         margin-left: 50px;
     }
 
+.container-slides {
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;
+    margin-top: 10%;
+}
 
-.intro {
+.main-header {
+    height: 55vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    margin-bottom: 5%;
 }
 
-    .intro p {
-        line-height: 35px;
-        margin: 75px 90px;
+    .main-header h1 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        margin: 2rem;
+        line-height: 1.2;
     }
 
-    .intro a {
-        color: black;
-    }
-
-.ourstory {
-    font-size: large;
-    padding: 15px 25px;
-    background-color: black;
-    color: white;
-    border: solid 1px white;
-    cursor: pointer;
-    transition: background-color .3s ease;
-    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
-}
-
-    .ourstory:hover {
-        background-color: white;
-        color: black;
-        border: solid 1px black;
-    }
-
-.eventS {
-    height: fit-content;
-    background-color: #f9f9f9;
-    padding: 50px;
-}
-
-.joinUs {
-    text-indent: 15px;
-    margin-top: 3%;
-}
-
-.event {
-    margin-top: 5%;
-    padding: 2%;
-    border: 2px solid #f6bd48;
-    border-radius: 25px;
-    text-indent: 15px;
-}
-
-    .event h1 {
-        text-indent: 15px;
-    }
-
-    .event p {
-        margin-top: 1%;
-    }
-
-#calender img {
-    position: relative;
-    top: 15px;
-}
-
-#calender a {
-    text-decoration: underline;
-    color: gray;
-}
-
-.footertouch {
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    background: transparent;
+    margin-bottom: 2rem;
     text-align: center;
-    height: fit-content;
-    padding: 5%;
 }
 
-.inTouchButton {
-    background-color: black;
-    color: white;
-    padding: 15px 20px;
-    font-size: large;
-    cursor: pointer;
-    margin-top: 15px;
-    border: 1px solid white;
-    transition: all ease-in-out .3s;
-}
-
-    .inTouchButton:hover {
-        border-color: black;
-        background-color: white;
-        color: black;
+    .card h3 {
+        margin-top: 5rem;
     }
 
+    .card img {
+        width: 100%;
+        border-radius: 50%;
+    }
 
+    .card > div {
+        padding: 2rem;
+    }
+
+    .card:nth-child(even) img {
+        order: 2;
+    }
+
+@media(max-width:600px) {
+    .card {
+        display: block;
+    }
+}
 
 * {
     margin: 0;
@@ -269,7 +191,7 @@ header {
     box-sizing: border-box;
 }
 
-.container {
+.container-footer {
     max-width: 1170px;
     margin: auto;
 }
@@ -286,6 +208,7 @@ ul {
 .footer {
     background-color: #24262b;
     padding: 70px 0;
+    margin-top: 5%;
 }
 
 .footer-col {
@@ -367,7 +290,6 @@ ul {
 
 
 
-
 @media only screen and (max-width: 600px) {
     .nav {
         display: none;
@@ -380,12 +302,7 @@ ul {
     .sidenav {
         display: inline;
     }
-
-    .joinUs {
-        text-align: center;
-    }
 }
-
 
 @media only screen and (min-width: 600px) {
     .nav {
@@ -401,50 +318,30 @@ ul {
     }
 }
 
-@media only screen and (min-width: 768px) {
-    .heroaddon {
-        top: -50%;
+@media only screen and (min-width: 998px) {
+    .sidenav {
+        display: none;
     }
 
-
-    @media only screen and (min-width: 992px) {
-        .heroaddon {
-            top: -60%;
-        }
-
-        .sidenav {
-            display: none;
-        }
-
-        .sidenav-bridge {
-            display: none;
-        }
-
-        .nav {
-            display: flex;
-        }
-
-        .nav-list {
-            margin-right: 8rem;
-        }
-
-        .nav .logo {
-            display: none;
-        }
+    .sidenav-bridge {
+        display: none;
     }
 
-    @media only screen and (min-width: 1200px) {
+    .nav {
+        display: flex;
+    }
 
-        .heroaddon {
-            top: -75%;
-        }
+    .nav-list {
+        margin-right: 0;
+    }
 
-        .nav .logo {
-            display: flex;
-        }
+    .nav .logo {
+        display: none;
+    }
+}
 
-        .nav-list {
-            margin-right: auto;
-        }
+@media only screen and (min-width: 1200px) {
+    .nav .logo {
+        display: flex;
     }
 }
