@@ -130,26 +130,29 @@ header {
     }
 
 .text {
-    margin-top: 15%;
-    margin-left: 5%;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    padding-top: 15%;
     font-size: 20px;
-    height: fit-content;
 }
 
-    .text a {
+.sMedia {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+}
+
+    .sMedia a {
         display: block;
         line-height: 50px;
         text-decoration: none;
         width: fit-content;
+        text-align: center;
+        margin: auto;
     }
-
-.sMedia {
-    padding: 50px;
-    border: solid 1px black;
-    width: fit-content;
-    margin-top: 5%;
-    box-shadow: 10px 10px 10px 10px #888888;
-}
 
 .underline {
     position: relative;
