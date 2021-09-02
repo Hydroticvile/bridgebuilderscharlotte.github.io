@@ -16,7 +16,7 @@ transition: background-color .5s ease;
 z-index: 1000;
 }
 
-.container{
+.container-nav{
 width: 100%;
 max-width: 120rem;
 margin: 0 auto;
