@@ -130,6 +130,7 @@ background-color: #d3d3d3;
   
   .members{
       height: fit-content;
+      line-height: 40px;
   }
   .member{
       text-align: center;
