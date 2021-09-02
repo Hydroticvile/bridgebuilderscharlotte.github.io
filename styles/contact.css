@@ -185,16 +185,16 @@ header {
     color: #E1306C;
 }
 
-    .underline-two::before {
-        content: '';
-        position: absolute;
-        bottom: 10px;
-        right: 0;
-        width: 0;
-        height: 2px;
-        background-color: #E1306C;
-        transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-    }
+.underline-two::before {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #E1306C;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
 
 @media (hover: hover) and (pointer: fine) {
     .underline-two:hover::before {
@@ -320,8 +320,8 @@ ul {
 }
 
 .footer-col .social-links a:hover {
-        color: #24262b;
-        background-color: #ffffff;
+    color: #24262b;
+    background-color: #ffffff;
 
 }
 
@@ -420,10 +420,10 @@ ul {
         width: 93%;
     }
 
-        .text .smedia {
-            float: right;
-            margin-top: 0;
-        }
+    .text .smedia {
+        float: right;
+        margin-top: 0;
+    }
 
     footer {
         height: fit-content;
