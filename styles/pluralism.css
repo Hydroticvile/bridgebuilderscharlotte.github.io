@@ -149,6 +149,7 @@ header {
 
     .buttons a {
         text-decoration: none;
+        display: inline-block;
     }
 
 .button {
@@ -299,5 +300,67 @@ ul {
 @media(max-width: 574px) {
     .footer-col {
         width: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .nav {
+        display: none;
+    }
+
+    .sidenav-bridge {
+        display: inline;
+    }
+
+    .sidenav {
+        display: inline;
+    }
+
+    .about {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .nav {
+        display: none;
+    }
+
+    .sidenav-bridge {
+        display: inline;
+    }
+
+    .sidenav {
+        display: inline;
+    }
+}
+
+@media only screen and (min-width: 998px) {
+    .sidenav {
+        display: none;
+    }
+
+    .sidenav-bridge {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+    }
+
+    .nav-list {
+        margin-right: 0;
+    }
+
+    .nav .logo {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .nav .logo {
+        display: flex;
     }
 }

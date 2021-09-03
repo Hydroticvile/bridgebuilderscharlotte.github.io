@@ -262,3 +262,67 @@ footer .container {
         width: 100%;
     }
 }
+
+
+
+@media only screen and (max-width: 600px) {
+    .nav {
+        display: none;
+    }
+
+    .sidenav-bridge {
+        display: inline;
+    }
+
+    .sidenav {
+        display: inline;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .nav {
+        display: none;
+    }
+
+    .sidenav-bridge {
+        display: inline;
+    }
+
+    .sidenav {
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about {
+        margin-top: 25%;
+    }
+}
+
+@media only screen and (min-width: 998px) {
+    .sidenav {
+        display: none;
+    }
+
+    .sidenav-bridge {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+    }
+
+    .nav-list {
+        margin-right: 0;
+    }
+
+    .nav .logo {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .nav .logo {
+        display: flex;
+    }
+}
