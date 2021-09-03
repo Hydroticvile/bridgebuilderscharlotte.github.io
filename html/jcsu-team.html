@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BridgeBuildersCharlotte</title>
-    <link href="styles/jcsu-team.css" rel="stylesheet">
+    <link href="/styles/jcsu-team.css" rel="stylesheet">
     <script src="index.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,109 +19,100 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container-nav">
-        <nav class="nav">
-            <a href="/html/index.html" class="logo"><img src="images/bridgebuilderslogo.png" alt="logo" width="200px"></a>
-            <ul class="nav-list">
-                <li>
-                    <a href="/html/index.html" class="nav-link">Home</a>
-                </li>
-                <li>
-                    <a href="/html/projects.html" class="nav-link">Our Projects</a>
-                </li>
-                <li>
-                    <a href="/html/partners.html" class="nav-link">Our Partners</a>
-                </li>
-                <li>
-                    <a href="/html/team.html" class="nav-link">Our Team</a>
-                </li>
-                <li>
-                    <a href="/html/contact.html" class="nav-link">Contact</a>
-                </li>
-                <li>
-                  <a href="/html/what-theyre-saying.html" class="nav-link">W.T.S.</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    <header>
+        <div class="container-nav">
+            <nav class="nav">
+                <a href="index.html" class="logo"><img src="/images/bridgebuilderslogo.png" alt="logo" width="200px"></a>
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="/html/projects.html" class="nav-link">Our Projects</a>
+                    </li>
+                    <li>
+                        <a href="/html/partners.html" class="nav-link">Our Partners</a>
+                    </li>
+                    <li>
+                        <a href="/html/team.html" class="nav-link">Our Team</a>
+                    </li>
+                    <li>
+                        <a href="/html/contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li>
+                        <a href="/html/what-theyre-saying.html" class="nav-link">W.T.S.</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Our Projects</a>
-        <a href="partners.html">Our Partners</a>
-        <a href="team.html">Our Team</a>
-        <a href="contact.html">Contact</a>
-    </div>
-      
-      <span class="sidenav-bridge" style="font-size:30px;cursor:pointer;color:black;" onclick="openNav()">&#9776;</span>
-      
-      <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-      }
-      
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-      </script>
-      <main class="container-slides">
+    <span class="sidenav-bridge" style="font-size:30px;cursor:pointer;color:black;" onclick="openNav()">&#9776;</span>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <main class="container-slides">
         <section class="card">
-          <img src="https://static.wixstatic.com/media/63cc73_c787b353a3d54ee3a7315aa8680223e8~mv2.png/v1/crop/x_0,y_0,w_200,h_200/fill/w_280,h_280,al_c,lg_1,q_85/WEB-JCSU-official-headshot.webp" alt="" />
-          <div>
-            <h3>JCSU Campus Leader</h3>
-          </div>
+            <img src="https://static.wixstatic.com/media/63cc73_c787b353a3d54ee3a7315aa8680223e8~mv2.png/v1/crop/x_0,y_0,w_200,h_200/fill/w_280,h_280,al_c,lg_1,q_85/WEB-JCSU-official-headshot.webp" alt="" />
+            <div>
+                <h3>JCSU Campus Leader</h3>
+            </div>
         </section>
-      
+
         <section class="card" data-aos="fade-left">
-          <img src="https://static.wixstatic.com/media/63cc73_288db385d7eb43bcabd06d7b52fc5a65~mv2.jpeg/v1/crop/x_0,y_665,w_2580,h_2580/fill/w_300,h_300,al_c,q_80,usm_0.66_1.00_0.01/Ex_Moon.webp" alt="" />
-          <div>
-            <h3>JCSU Student Intern</h3>
-          </div>
+            <img src="https://static.wixstatic.com/media/63cc73_288db385d7eb43bcabd06d7b52fc5a65~mv2.jpeg/v1/crop/x_0,y_665,w_2580,h_2580/fill/w_300,h_300,al_c,q_80,usm_0.66_1.00_0.01/Ex_Moon.webp" alt="" />
+            <div>
+                <h3>JCSU Student Intern</h3>
+            </div>
         </section>
-      </main>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init({
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
             offset: 150, // offset (in px) from the original trigger point
             delay: 0, // values from 0 to 3000, with step 50ms
             duration: 1000 // values from 0 to 3000, with step 50ms
-          });
-      </script>    
+        });
+    </script>
     <footer class="footer">
         <div class="container-footer">
-          <div class="row">
-            <div class="footer-col">
-              <h4>Company</h4>
-              <ul>
-                <li><a href="our-story.html">Our Story</a></li>
-                <li><a href="projects.html">Our Projects</a></li>
-                <li><a href="team.html">Our Team</a></li>
-                <li><a href="partners.html">Our Partners</a></li>
-              </ul>
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/html/our-story.html">Our Story</a></li>
+                        <li><a href="/html/projects.html">Our Projects</a></li>
+                        <li><a href="/html/team.html">Our Team</a></li>
+                        <li><a href="/html/partners.html">Our Partners</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="/html/religious-pluralism.html">Religious Pluralism</a></li>
+                        <li><a href="/html/what-theyre-saying.html">What They're Saying</a></li>
+                        <li><a href="/html/faith-in-the-vaccine.html">Faith in the Vaccine</a></li>
+                        <li><a href="/html/contact.html">Join Us</a></li>
+                        <li><a href="/html/s-council.html">Strategic Leadership Council</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/bridgebuilderscharlotte" target="_blank"><i class="fa fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/bridgebuilderscharlotte/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="footer-col">
-              <h4>More</h4>
-              <ul>
-                <li><a href="religious-pluralism.html">Religious Pluralism</a></li>
-                <li><a href="what-theyre-saying.html">What They're Saying</a></li>
-                <li><a href="faith-in-the-vaccine.html">Faith in the Vaccine</a></li>
-                <li><a href="contact.html">Join Us</a></li>
-                <li><a href="s-council.html">Strategic Leadership Council</a></li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <h4>Follow Us</h4>
-              <div class="social-links">
-                <a href="https://www.facebook.com/bridgebuilderscharlotte" target="_blank"><i class="fa fa-facebook-f"></i></a>
-                 <a href="#"><i class="fa fa-twitter"></i></a>
-                 <a href="https://www.instagram.com/bridgebuilderscharlotte/" target="_blank"><i class="fa fa-instagram"></i></a>
-               </div>
-             </div>
-           </div>
-         </div>
-      </footer>        
+        </div>
+    </footer>
 </body>
 </html>
