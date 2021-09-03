@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BridgeBuildersCharlotte</title>
+    <link href="styles/our-story.css" rel="stylesheet">
+    <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container-nav">
+            <nav class="nav">
+                <a href="index.html" class="logo"><img src="images/bridgebuilderslogo.png" alt="logo" width="200px"></a>
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="projects.html" class="nav-link">Our Projects</a>
+                    </li>
+                    <li>
+                        <a href="partners.html" class="nav-link">Our Partners</a>
+                    </li>
+                    <li>
+                        <a href="team.html" class="nav-link">Our Team</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li>
+                      <a href="what-theyre-saying.html" class="nav-link">W.T.S.</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Our Projects</a>
+        <a href="partners.html">Our Partners</a>
+        <a href="team.html">Our Team</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      
+      <span class="sidenav-bridge" style="font-size:30px;cursor:pointer;color:black;" onclick="openNav()">&#9776;</span>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+    
+    <div class="video">
+        <iframe src="https://player.vimeo.com/video/401007105?h=113cca22dc" width="500" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="about">
+        <h1>Our Story</h1>
+        <p>In February, 2020, IFYC's Founder and President Eboo Patel issued a challenge to the Charlotte
+        community: "The time is ripe to come together across religious divides to build a stronger Charlotte." 
+        Then came Covid--and along with it, increasing needs in critical areas such as food and education. 
+        Thanks to a grant from The Gambrell Foundation, Bridge Builders Charlotte took up Patel's challenge 
+        to leverage the inspiration and resources of our religious communities to serve the common good. 
+        Our network of partnerships among area campuses, non-profit organizations, and faith or philosophical 
+        communities is building bridges of understanding and cooperation that will help us emerge from the 
+        pandemic better equipped to deploy interfaith engagement as a catalyst for social change.
+        </p>
+    </div>
+    <div class="buttons">
+        <ul>
+            <li>
+                <button onclick="document.location='religious-pluralism.html'" class="button">Religious Pluralism</button>
+            </li>
+            <li>
+                <button onclick="document.location='what-theyre-saying.html'" class="button">What They're Saying</button>
+            </li>
+        </ul>    
+    </div>
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="our-story.html">Our Story</a></li>
+                <li><a href="projects.html">Our Projects</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="partners.html">Our Partners</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Extras</h4>
+              <ul>
+                <li><a href="religious-pluralism.html">Religious Pluralism</a></li>
+                <li><a href="what-theyre-saying.html">What They're Saying</a></li>
+                <li><a href="faith-in-the-vaccine.html">Faith in the Vaccine</a></li>
+                <li><a href="contact.html">Join Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Follow Us</h4>
+              <div class="social-links">
+                <a href="https://www.facebook.com/bridgebuilderscharlotte"><i class="fa fa-facebook-f"></i></a>
+                 <a href="#"><i class="fa fa-twitter"></i></a>
+                 <a href="https://www.instagram.com/bridgebuilderscharlotte/"><i class="fa fa-instagram"></i></a>
+               </div>
+             </div>
+           </div>
+         </div>
+      </footer>
+</body>
+</html>
