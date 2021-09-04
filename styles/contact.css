@@ -237,7 +237,7 @@ header {
   box-sizing: border-box;
 }
 
-footer .container {
+.container-footer {
   max-width: 1170px;
   margin: auto;
 }

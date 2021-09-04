@@ -165,7 +165,7 @@ background-color: #d3d3d3;
     padding:0;
   }
   
-  footer .container{
+  .container-footer{
     max-width: 1170px;
     margin:auto;
   }

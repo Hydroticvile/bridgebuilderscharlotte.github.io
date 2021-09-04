@@ -162,7 +162,7 @@ html, body {
         box-sizing: border-box;
     }
     
-    .container{
+    .container-footer{
         max-width: 1170px;
         margin:auto;
     }
