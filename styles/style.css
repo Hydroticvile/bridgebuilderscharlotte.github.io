@@ -10,7 +10,6 @@ html, body {
 .hero img{
   width: 100%;
   height: fit-content;
-  filter: brightness(.6);
 }
 
 .heroaddon{
