@@ -12,12 +12,6 @@ html, body {
   height: fit-content;
 }
 
-.heroaddon{
-  position: relative;
-  top: -100%;
-  text-align: center;
-  height: fit-content;
-}
 header{
   width: 100%;
   position: fixed;
@@ -47,6 +41,7 @@ header{
   text-decoration: none;
   color: #fff;
   font-size: 1.3rem;
+  display: none;
 }
 
 .nav .logo{
@@ -112,6 +107,7 @@ header{
 }
 .scrolling-active .nav a{
   color: #313131;
+  display: flex;
 }
 
 .scrolling-active .nav-link::after{
@@ -390,16 +386,7 @@ ul{
 
 }
 
-@media only screen and (min-width: 768px) {
-  .heroaddon{
-    top: -50%;
-  }
-
-
 @media only screen and (min-width: 992px) {
-  .heroaddon{
-    top: -60%;
-  }
 
   .sidenav{
     display: none;
@@ -426,10 +413,6 @@ ul{
 
 @media only screen and (min-width: 1200px) {
 
-  .heroaddon{
-    top: -75%;
-  }
-
   .nav .logo{
     display: flex;
   }
@@ -438,5 +421,5 @@ ul{
     margin-right: auto;
   }
 }
-}
+
 
